@@ -4,6 +4,6 @@
 
 令 $T = 120$，即保留的位数。
 
-时间复杂度：$O(log_2^x + T \times log_2^{10} \times T^2)$ per test case
+时间复杂度：$O(\log_2 x + T \times \log_2 10 \times T^2)$ per test case
 
 空间复杂度：$O(T)$ per test case
