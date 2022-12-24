@@ -1,0 +1,25 @@
+24
+mkdir /home
+ls
+cd home
+pwd
+touch file
+ls
+mkdir /home
+mkdir /root/c++
+cd ..
+pwd
+cd /root
+ls
+cd c++
+pwd
+cd ../..
+ls
+rm /root
+ls
+cd root
+cd home
+rm file
+rm file2
+ls
+cd ..
