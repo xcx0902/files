@@ -182,7 +182,9 @@ void touch(string s) {
  * @example pwd()
  */
 void pwd() {
-    cout << now->full << endl;
+    string tmp = now->full;
+    if (tmp == "/") cout << tmp << endl;
+    else cout << tmp.substr(0, tmp.size() - 1) << endl;
 }
  
 int main() {
