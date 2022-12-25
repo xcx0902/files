@@ -1,0 +1,28 @@
+/
+ok
+ok
+ok
+home root sys 
+ok
+*fil home root sys 
+err
+/
+ok
+/home
+err
+/home
+EMPTY
+ok
+ok
+*.cfg xcx0902 
+ok
+err
+EMPTY
+/home/xcx0902
+ok
+ok
+err
+etc *fil home root sys 
+err
+ok
+*passwd 

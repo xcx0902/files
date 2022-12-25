@@ -1,0 +1,25 @@
+ok
+ok
+ok
+*a *b *c 
+*a *b *c 
+err
+err
+err
+*a *b *c 
+err
+err
+*a *b *c 
+/
+ok
+ok
+*c 
+ok
+ok
+err
+/sys
+ok
+ok
+*fil 
+ok
+EMPTY

@@ -1,0 +1,21 @@
+EMPTY
+ok
+ok
+ok
+ok
+boot home root sys 
+ok
+boot home root sys *sys.img 
+err
+err
+ok
+err
+err
+ok
+err
+err
+ok
+ok
+/home/test
+err
+err

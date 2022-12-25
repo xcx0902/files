@@ -1,0 +1,29 @@
+28
+pwd
+mkdir /sys
+mkdir /home
+mkdir /root
+ls
+touch fil
+ls
+cd fil
+pwd
+cd home
+pwd
+cd sys
+pwd
+ls
+mkdir xcx0902
+touch .cfg
+ls
+cd xcx0902
+cd xcx0902
+ls
+pwd
+touch /etc/passwd
+cd /
+cd ..
+ls
+cd etc/passwd
+cd etc
+ls

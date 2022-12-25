@@ -1,0 +1,26 @@
+25
+touch a
+touch b
+touch c
+ls
+ls
+cd a
+cd b
+cd c
+ls
+touch a/fil
+touch ../fil
+ls
+pwd
+rm a
+rm b
+ls
+mkdir sys
+cd sys
+rm /sys
+pwd
+cd /sys
+touch fil
+ls
+rm fil
+ls

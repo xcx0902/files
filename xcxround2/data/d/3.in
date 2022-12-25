@@ -1,0 +1,22 @@
+21
+ls
+mkdir home
+mkdir sys
+mkdir root
+mkdir boot
+ls
+touch sys.img
+ls
+mkdir ../data
+mkdir /sys.img/data
+mkdir /test/data
+mkdir /home
+cd /sys.img
+cd /home
+rm /home
+rm home
+mkdir test
+cd test
+pwd
+rm ../test
+touch ../../../../fil
