@@ -1,3 +1,3 @@
-# Repository XCXMHB
+# XCX Round #2 Files
 
-Files shared with XCX and MHB for some secrets.
+Shared with XCX and MHB for some secrets.
