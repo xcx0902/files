@@ -133,15 +133,6 @@ void rm(string s) {
     vector<string> tmp = cut(now->full);
     p = root;
     try {
-		if (sep.size() <= tmp.size()) {
-			bool flag = 1;
-			for (int i = 0; i < sep.size(); i++)
-				if (sep[i] != tmp[i]) {
-					flag = 0;
-					break;
-				}
-			if (flag) throw "err";
-		}
         for (string x: sep) {
             if (x == ".") continue;
             else if (x == "..") p = p->father;
@@ -150,6 +141,16 @@ void rm(string s) {
             if (p == NULL) throw "err"; 
         }
         folder *temp = p;
+        vector<string> pos = cut(temp->full);
+		if (pos.size() <= tmp.size()) {
+			bool flag = 1;
+			for (int i = 0; i < pos.size(); i++)
+				if (pos[i] != tmp[i]) {
+					flag = 0;
+					break;
+				}
+			if (flag) throw "err";
+		}
         p = p->father;
         p->has.erase(*(--sep.end()));
         p->child.erase(*(--sep.end()));
