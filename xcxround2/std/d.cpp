@@ -53,7 +53,15 @@ void mkdir(string s) {
     p = root;
     bool flag = 0;
     for (string x: sep) {
-        if (p->has[x]) { 
+    	if (x == ".") continue;
+		else if (x == "..") {
+			if (p == root) {
+				cout << "err" << endl;
+				return;
+			}
+			p = p->father;
+		}
+        else if (p->has[x]) { 
             if (p->child[x]->type) p = p->child[x];
             else {
                 cout << "err" << endl;
@@ -156,7 +164,15 @@ void touch(string s) {
     vector<string> sep = cut(s);
     p = root;
     for (string x: sep) {
-        if (p->has[x]) { 
+    	if (x == ".") continue;
+    	else if (x == "..") {
+    		if (p == root) {
+				cout << "err" << endl;
+				return;
+			}
+			p = p->father;
+		}
+        else if (p->has[x]) { 
             if (p->child[x]->type) p = p->child[x];
             else {
                 cout << "err" << endl;
@@ -188,6 +204,7 @@ void pwd() {
 }
  
 int main() {
+//	freopen("out.txt", "w", stdout);
     int n;
     cin >> n;
     initFS();
