@@ -130,12 +130,18 @@ void rm(string s) {
     string ori = (s[0] == '/'? "" : "/") + s;
     if (s[0] != '/') s = now->full + s;
     vector<string> sep = cut(s);
+    vector<string> tmp = cut(now->full);
     p = root;
     try {
-        vector<string> tmp = cut(ori);
-        while (tmp.size() && *(--tmp.end()) == ".")
-            tmp.pop_back();
-        if (tmp.empty()) throw "err";
+		if (sep.size() <= tmp.size()) {
+			bool flag = 1;
+			for (int i = 0; i < sep.size(); i++)
+				if (sep[i] != tmp[i]) {
+					flag = 0;
+					break;
+				}
+			if (flag) throw "err";
+		}
         for (string x: sep) {
             if (x == ".") continue;
             else if (x == "..") p = p->father;
