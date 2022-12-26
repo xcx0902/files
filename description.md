@@ -10,13 +10,15 @@
 
 经济 mhb 负责
 
-|  | idea | std | data | diff(at) | diff(cf) |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| A | XCX | XCX | MHB | 500 | 1000 |
-| B | XCX | XCX | XCX | 1000 | 1600 |
-| C | XCX | XCX | XCX | 1300 | 1700 |
-| D | XCX | XCX | XCX | 2000 | 2400 |
-| E | MHB | MHB | MHB | 1600 | 2000 |
+|  | idea | std | data | diff(at) | diff(cf) | stdlen
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| A | XCX | XCX | MHB | 500 | 1000 | 317B, 16L |
+| B | XCX | XCX | XCX | 1000 | 1600 | 2.47K, 92L |
+| C | XCX | XCX | XCX | 1300 | 1700 | 1.86K, 82L |
+| D | XCX | XCX | XCX | 2000 | 2400 | 5.48K, 244L |
+| E | MHB | MHB | MHB | 1600 | 2000 | 1.51K, 68L |
+| All | | | | | | 11.63K, 502L | 
+| Avg | | | | 1280 | 1740 | 2.32K, 100L |
 
 ## 赛时公告
 
