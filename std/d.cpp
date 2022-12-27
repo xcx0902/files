@@ -53,14 +53,14 @@ void mkdir(string s) {
     p = root;
     bool flag = 0;
     for (string x: sep) {
-    	if (x == ".") continue;
-		else if (x == "..") {
-			if (p == root) {
-				cout << "err" << endl;
-				return;
-			}
-			p = p->father;
-		}
+        if (x == ".") continue;
+        else if (x == "..") {
+            if (p == root) {
+                cout << "err" << endl;
+                return;
+            }
+            p = p->father;
+        }
         else if (p->has[x]) { 
             if (p->child[x]->type) p = p->child[x];
             else {
@@ -142,15 +142,15 @@ void rm(string s) {
         }
         folder *temp = p;
         vector<string> pos = cut(temp->full);
-		if (pos.size() <= tmp.size()) {
-			bool flag = 1;
-			for (int i = 0; i < pos.size(); i++)
-				if (pos[i] != tmp[i]) {
-					flag = 0;
-					break;
-				}
-			if (flag) throw "err";
-		}
+        if (pos.size() <= tmp.size()) {
+            bool flag = 1;
+            for (int i = 0; i < pos.size(); i++)
+                if (pos[i] != tmp[i]) {
+                    flag = 0;
+                    break;
+                }
+            if (flag) throw "err";
+        }
         p = p->father;
         p->has.erase(*(--sep.end()));
         p->child.erase(*(--sep.end()));
@@ -170,15 +170,16 @@ void touch(string s) {
     if (s[0] != '/') s = now->full + s;
     vector<string> sep = cut(s);
     p = root;
+    bool flag = 0;
     for (string x: sep) {
-    	if (x == ".") continue;
-    	else if (x == "..") {
-    		if (p == root) {
-				cout << "err" << endl;
-				return;
-			}
-			p = p->father;
-		}
+        if (x == ".") continue;
+        else if (x == "..") {
+            if (p == root) {
+                cout << "err" << endl;
+                return;
+            }
+            p = p->father;
+        }
         else if (p->has[x]) { 
             if (p->child[x]->type) p = p->child[x];
             else {
@@ -186,6 +187,7 @@ void touch(string s) {
                 return;
             }
         } else {
+            flag = 1;
             p->has[x] = 1;
             p->child[x] = new folder;
             p->child[x]->type = 1;
@@ -194,6 +196,10 @@ void touch(string s) {
             p->child[x]->father = p;
             p = p->child[x];
         }
+    }
+    if (flag == 0) {
+        cout << "err" << endl;
+        return;
     }
     p = p->father;
     p->child[*(--sep.end())]->type = 0;
@@ -211,7 +217,6 @@ void pwd() {
 }
  
 int main() {
-//	freopen("out.txt", "w", stdout);
     int n;
     cin >> n;
     initFS();
