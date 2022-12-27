@@ -11,7 +11,7 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "intelliSenseMode": "windows-gcc-x64",
+            "intelliSenseMode": "windows-gcc-x86",
             "compilerPath": "C:\\Program Files (x86)\\Dev-Cpp\\MinGW32\\bin\\g++.exe",
             "compilerArgs": [
                 "-std=c++14"
