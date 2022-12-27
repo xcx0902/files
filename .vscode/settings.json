@@ -1,6 +1,12 @@
 {
     "files.associations": {
         "iomanip": "cpp",
-        "istream": "cpp"
+        "istream": "cpp",
+        "*.tcc": "cpp",
+        "cmath": "cpp",
+        "functional": "cpp",
+        "random": "cpp",
+        "regex": "cpp",
+        "type_traits": "cpp"
     }
 }
