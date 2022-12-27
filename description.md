@@ -10,17 +10,17 @@
 
 经济 mhb 负责
 
-## Warning: 本场 STD 平均码量为 2.32K, 100L（见下表），请做好心理准备。
+## Warning: 本场 STD 平均码量为 2.39K, 101L（见下表），请做好心理准备。
 
 |  | idea | std | data | diff(at) | diff(cf) | stdlen
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | A | XCX | XCX | MHB | 500 | 1000 | 317B, 16L |
 | B | XCX | XCX | XCX | 1000 | 1600 | 2.47K, 92L |
 | C | XCX | XCX | XCX | 1300 | 1700 | 1.86K, 82L |
-| D | XCX | XCX | XCX | 2000 | 2400 | 5.48K, 244L |
+| D | XCX | XCX | XCX | 2000 | 2400 | 5.77K, 249L |
 | E | MHB | MHB | MHB | 1600 | 2000 | 1.51K, 68L |
-| All | | | | | | 11.63K, 502L | 
-| Avg | | | | 1280 | 1740 | 2.32K, 100L |
+| All | | | | | | 11.92K, 507L | 
+| Avg | | | | 1280 | 1740 | 2.39K, 101L |
 
 难度 $\approx$ CSP-J+/CSP-S-
 
