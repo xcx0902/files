@@ -1,0 +1,11 @@
+10
+mkdir sys
+ls
+pwd
+mkdir sys
+ls
+touch sys
+ls
+cd sys
+ls
+pwd
