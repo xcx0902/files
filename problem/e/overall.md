@@ -1,91 +1,57 @@
-# Let M28 Bankrupt
+# War of flowers and mobs
 
 ## 题目背景
 
-小 M 厌倦了打 `Florr`，于是他决定去开发 `florr.cn` 并让 `M28` 破产。
+# 本题作弊者严惩！！
 
 ## 题目描述
 
-可是，开发首先得了解 `Linux` 操作系统，而小 M 并没有。于是你需要实现一个简易 `Linux` 来帮助他。
+$7702$ 年，`Florr` 爆发了一场战斗。
 
-这个系统需要包括以下命令：
+属于不同队伍的花朵们排成队，面对着怪物们。
 
-* `mkdir`
-* `ls`
-* `cd`
-* `rm`
-* `touch`
-* `pwd`
-
-关于以上命令的用法，参见样例。
+小 X 作为指挥官，想知道其中一些区间的花朵的力量的众数，以便了解花朵们的能力。
 
 ## 输入格式
 
-第一行一个整数 $n$，表示命令条数。
+第一行一个整数 $n$。
 
-后面 $n$ 行，代表每个命令。
+第二行 $n$ 个整数 $a_1, a_2, \dots a_{n-1}, a_n$。
+
+接下来 $n$ 行，每行表示一个询问，每个询问一行，包含 $l,r$。你需要输出 $[l,r]$ 内的众数。
+
+如有多个众数，输出最小的一个。
 
 ## 输出格式
 
-参见样例。
+输出 $n$ 行，每行一个整数，为区间众数。
 
 ## 样例 #1
 
 ### 样例输入 #1
 
 ```
-24
-mkdir /home
-ls
-cd home
-pwd
-touch file
-ls
-mkdir /home
-mkdir /root/c++
-cd ..
-pwd
-cd /root
-ls
-cd c++
-pwd
-cd ../..
-ls
-rm /root
-ls
-cd root
-cd home
-rm file
-rm file2
-ls
-cd ..
+4
+1 2 2 4
+1 2
+1 4
+2 4
+3 4
 ```
 
 ### 样例输出 #1
 
 ```
-ok
-home
-ok
-/home
-ok
-*file
-err
-ok
-ok
-/
-ok
-c++
-ok
-/root/c++
-ok
-home root
-ok
-home
-err
-ok
-ok
-err
-EMPTY
-ok
+1
+2
+2
+2
 ```
+
+## 提示
+
+For $30\%$ data, $1 \le n \le 5 \times 10^3$.
+
+For $100\%$ data, $1 \le n \le 5 \times 10^4$.
+
+保证输入的所有数为 `int`。
