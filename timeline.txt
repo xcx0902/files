@@ -1,3 +1,0 @@
-Before <TIME> Public description.md & timeline.txt
-<TIME> Contest Begin, Public folder problem
-<TIME> Contest End, Public folder data & editorial & std
