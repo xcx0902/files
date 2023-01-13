@@ -7,7 +7,7 @@ $$f_i=a\% \times f_{i-5}+ \frac{1-a\%}{4} \times (f_{i-1}+f_{i-2}+f_{i-3}+f_{i-4
 
 答案：$f_b \times 100$
 
-暴力转移即可，不需要额外算法。
+暴力转移即可。
 
 时间复杂度：$O(b)$ per test case
 
