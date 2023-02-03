@@ -1,0 +1,1 @@
+在附件中给出了 std 使用 [MinGW32 10.2.0](https://github.com/xcx0902/mingw32) 编译后的 exe 程序。可以用它来进行调试。
