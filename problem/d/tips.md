@@ -1,1 +1,1 @@
-在附件中给出了 std 使用 [MinGW32 10.2.0](https://github.com/xcx0902/mingw32) 编译后的 exe 程序。可以用它来进行调试。
+在附件中给出了 std 使用 [DevC++ 6.5 & MinGW32 10.2.0](https://github.com/xcx0902/software/tree/main/devc%2B%2B/DevCpp_v6.5.exe) 编译后的 exe 程序。可以用它来进行调试。
