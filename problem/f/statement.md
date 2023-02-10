@@ -1,1 +1,0 @@
-计算：$\sum_{i=1}^m\sum_{j=1}^n\sum_{k=1}^n\sum_{l=1}^i j^lk^{i-l}C_i^l \bmod 10^9+7$

@@ -1,5 +1,7 @@
-For $30\%$ data, $1 \le n \le 5 \times 10^3$.
+$1 \le n \le 10^5$
 
-For $100\%$ data, $1 \le n \le 5 \times 10^4$.
+$1 \le m \le 10^{18}$
 
-保证输入的所有数为 `int`。
+对于 $20\%$ 的数据：$1\le n,m\le10$
+
+对于 $50\%$ 的数据：$1\le n,m\le1000$
